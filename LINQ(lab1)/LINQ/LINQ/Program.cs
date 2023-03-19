@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
         LINQCommands linqCommands = new LINQCommands();
-        
+
         List<Car> cars = new List<Car>
         {
             new Car(1, "Toyota", 25000, "Sedan", 50, 2019),
@@ -45,31 +45,69 @@ class Program
             new Client(9, "Timothy Green", "864 Walnut St", "555-4567"),
             new Client(10, "Emily White", "579 Spruce St", "555-8901")
         };
-        
-        Random rnd = new Random();
-        List<Order> orders = new List<Order>();
 
-        foreach (Client client in clients)
+        List<VehicleFleet> vehicleFleets = new List<VehicleFleet>
         {
-            for (int i = 0; i < 3; i++)
-            {
-                int carIndex = rnd.Next(cars.Count);
-                Car car = cars[carIndex];
+            new VehicleFleet(1, 1, 24, 2500),
+            new VehicleFleet(2, 2, 15, 2800),
+            new VehicleFleet(3, 3, 32, 2000),
+            new VehicleFleet(4, 4, 21, 3000),
+            new VehicleFleet(5, 5, 20, 3500),
+            new VehicleFleet(6, 6, 16, 2200),
+            new VehicleFleet(7, 7, 18, 2700),
+            new VehicleFleet(8, 8, 8, 4500),
+            new VehicleFleet(9, 9, 3, 50000),
+            new VehicleFleet(10, 10, 26, 4200),
+            new VehicleFleet(11, 11, 42, 2400),
+            new VehicleFleet(12, 12, 13, 4800),
+            new VehicleFleet(13, 13, 42, 1800),
+            new VehicleFleet(14, 14, 34, 2000),
+            new VehicleFleet(15, 15, 7, 6000),
+            new VehicleFleet(16, 16, 29, 3200),
+            new VehicleFleet(17, 17, 6, 7000),
+            new VehicleFleet(18, 18, 2, 15000),
+            new VehicleFleet(19, 19, 2, 20000),
+            new VehicleFleet(20, 20, 1, 30000),
+        };
 
-                DateTime creationTime = new DateTime(2023, rnd.Next(1, 13), rnd.Next(1, 29), rnd.Next(0, 24), 0, 0);
-                DateTime returnTime = creationTime.AddDays(rnd.Next(1, 8));
+        List<Order> orders = new List<Order>
+        {
+            new Order(1, 1, 5, DateTime.Now, DateTime.Now.AddDays(2), false),
+            new Order(2, 2, 8, DateTime.Now.AddDays(1), DateTime.Now.AddDays(3), true),
+            new Order(3, 3, 2, DateTime.Now.AddDays(3), DateTime.Now.AddDays(6), false),
+            new Order(4, 4, 6, DateTime.Now.AddDays(4), DateTime.Now.AddDays(5), true),
+            new Order(5, 5, 3, DateTime.Now.AddDays(1), DateTime.Now.AddDays(2), true),
+            new Order(6, 6, 7, DateTime.Now.AddDays(5), DateTime.Now.AddDays(7), false),
+            new Order(7, 7, 1, DateTime.Now.AddDays(2), DateTime.Now.AddDays(3), true),
+            new Order(8, 8, 4, DateTime.Now.AddDays(1), DateTime.Now.AddDays(8), false),
+            new Order(9, 9, 9, DateTime.Now.AddDays(5), DateTime.Now.AddDays(9), true),
+            new Order(10, 10, 10, DateTime.Now.AddDays(10), DateTime.Now.AddDays(13), false),
+            new Order(11, 4, 5, DateTime.Now.AddDays(11), DateTime.Now.AddDays(12), false),
+            new Order(12, 7, 2, DateTime.Now.AddDays(1), DateTime.Now.AddDays(8), true),
+            new Order(13, 1, 6, DateTime.Now.AddDays(2), DateTime.Now.AddDays(4), false),
+            new Order(14, 7, 3, DateTime.Now.AddDays(4), DateTime.Now.AddDays(9), true),
+            new Order(15, 8, 7, DateTime.Now.AddDays(4), DateTime.Now.AddDays(5), false),
+            new Order(16, 2, 1, DateTime.Now.AddDays(7), DateTime.Now.AddDays(10), true),
+            new Order(17, 5, 4, DateTime.Now.AddDays(12), DateTime.Now.AddDays(16), false),
+            new Order(18, 3, 9, DateTime.Now.AddDays(9), DateTime.Now.AddDays(11), true),
+            new Order(19, 10, 10, DateTime.Now.AddDays(15), DateTime.Now.AddDays(19), false),
+            new Order(20, 10, 5, DateTime.Now.AddDays(20), DateTime.Now.AddDays(12), true)
+        };
 
-                decimal deposit = car.Price * (decimal)(0.1 + rnd.NextDouble() * 0.2);
-
-                Order order = new Order(orders.Count + 1, client.Id, car.Id, creationTime, returnTime, deposit);
-                orders.Add(order);
-            }
-        }
-        
         linqCommands.getAllCars(cars);
-        
+
         linqCommands.getCarsByBrand(cars, "Bugatti");
 
-        linqCommands.getClinetsAndOrder(orders);
+        linqCommands.getCarsandClients(orders, vehicleFleets, clients);
+
+        linqCommands.getOrdersbyDate(orders);
+
+        linqCommands.getVehicleFleetByRentals(vehicleFleets);
+
+        linqCommands.getOrderStatus(orders);
+
+        linqCommands.getCarsProfit(cars, vehicleFleets);
+        
+        linqCommands.getCarRent(cars, vehicleFleets);
     }
 }

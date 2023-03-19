@@ -6,26 +6,26 @@ public class Order
     
     public int ClinetId { get; set; }
     
-    public int CarId { get; set; }
+    public int CarFromVehicleFleetId { get; set; }
     
     public DateTime CreationTime { get; set; }
     
     public DateTime ReturnTime { get; set; }
     
-    public decimal Deposit { get; set; }
+    public bool DepositStatus { get; set; }
 
-    public Order(int id, int clinetId, int carId, DateTime creationTime, DateTime returnTime, decimal deposit)
+    public Order(int id, int clinetId, int carFromVehicleFleetId, DateTime creationTime, DateTime returnTime, bool depositStatus)
     {
         Id = id;
         ClinetId = clinetId;
-        CarId = carId;
+        CarFromVehicleFleetId = carFromVehicleFleetId;
         CreationTime = creationTime;
         ReturnTime = returnTime;
-        Deposit = deposit;
+        DepositStatus = depositStatus;
     }
     
     public override string ToString()
     {
-        return $"{Id}-{ClinetId}-{CarId}-{CreationTime}-{ReturnTime}-{Deposit}";
+        return $"Order Id:{Id}-ClinetId:{ClinetId}-CarFromVehicleFleetId:{CarFromVehicleFleetId}-CreationTime:{CreationTime}-ReturnTime:{ReturnTime}-DepositStatus:{DepositStatus}";
     }
 }
