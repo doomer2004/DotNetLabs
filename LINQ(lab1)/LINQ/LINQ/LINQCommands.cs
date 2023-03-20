@@ -4,7 +4,7 @@ namespace LINQlab;
 
 public class LINQCommands
 {
-    public void getAllCars(List<Car> cars)
+    public void getAllCars(IEnumerable<Car> cars)
     {
         Console.WriteLine("1. All cars:");
         var resoult = from car in cars select car;
@@ -14,7 +14,7 @@ public class LINQCommands
         }
     }
     
-    public void getCarsByBrand(List<Car> cars, string brand)
+    public void getCarsByBrand(IEnumerable<Car> cars, string brand)
     {
         Console.WriteLine("2. Cars by brand:");
         var resoult = from car in cars 
@@ -26,7 +26,7 @@ public class LINQCommands
         }
     }
     
-    public void getCarsandClients(List<Order> orders, List<VehicleFleet> vehicleFleets, List<Client> clients)
+    public void getCarsandClients(IEnumerable<Order> orders, IEnumerable<VehicleFleet> vehicleFleets, IEnumerable<Client> clients)
     {
         Console.WriteLine("3. Cars and Clients:");
         var resoult = from order in orders
@@ -39,7 +39,7 @@ public class LINQCommands
         }
     }
     
-    public void getOrdersbyDate(List<Order> orders)
+    public void getOrdersbyDate(IEnumerable<Order> orders)
     {
         Console.WriteLine("4. First Orsers:");
         var resoult = from order in orders
@@ -51,7 +51,7 @@ public class LINQCommands
         }
     }
     
-    public void getVehicleFleetByRentals(List<VehicleFleet> vehicleFleets)
+    public void getVehicleFleetByRentals(IEnumerable<VehicleFleet> vehicleFleets)
     {
         Console.WriteLine("5. cars that used the smallest:");
         var resoult = from vehicleFleet in vehicleFleets
@@ -64,7 +64,7 @@ public class LINQCommands
         }
     }
     
-    public void getOrderStatus(List<Order> orders)
+    public void getOrderStatus(IEnumerable<Order> orders)
     {
         Console.WriteLine("6. Order status:");
         var resoult = from order in orders
@@ -87,7 +87,7 @@ public class LINQCommands
         }
     }
     
-    public void getCarsProfit(List<Car> cars, List<VehicleFleet> vehicleFleets)
+    public void getCarsProfit(IEnumerable<Car> cars, IEnumerable<VehicleFleet> vehicleFleets)
     {
         Console.WriteLine("7. Profit:");
         var res = from v in vehicleFleets
@@ -104,7 +104,7 @@ public class LINQCommands
         }
     }
     
-    public void getCarRent(List<Car> cars, List<VehicleFleet> vehicleFleets)
+    public void getCarRent(IEnumerable<Car> cars, IEnumerable<VehicleFleet> vehicleFleets)
     {
         Console.WriteLine("8. Rent price:");
         var res = from v in vehicleFleets
@@ -119,6 +119,33 @@ public class LINQCommands
         foreach (var car in res)
         {
             Console.WriteLine($"{car.CarName}: {car.RentPrice}");
+        }
+    }
+    
+    public void getClient(IEnumerable<Client> clients)
+    {
+        Console.WriteLine("9. Client:");
+        var res = from client in clients
+            orderby client.FullName
+            let c = client.FullName + " " + client.PhoneNumber
+            select c;
+    
+        foreach (var clinet in res)
+        {
+            Console.WriteLine(clinet);
+        }
+    }
+    
+    public void getOldCars(IEnumerable<Car> cars)
+    {
+        Console.WriteLine("10. Top 5 old cars:");
+        var res = (from car in cars
+            orderby car.YearOfRelease
+            select car).Take(5);
+        
+        foreach (var order in res)
+        {
+            Console.WriteLine(order);
         }
     }
     

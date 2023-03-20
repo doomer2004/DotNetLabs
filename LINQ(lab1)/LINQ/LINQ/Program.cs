@@ -10,22 +10,22 @@ class Program
 
         List<Car> cars = new List<Car>
         {
-            new Car(1, "Toyota", 25000, "Sedan", 50, 2019),
-            new Car(2, "Honda", 28000, "SUV", 60, 2020),
-            new Car(3, "Nissan", 20000, "Hatchback", 45, 2018),
+            new Car(1, "Toyota", 25000, "Sedan", 50, 2013),
+            new Car(2, "Honda", 28000, "SUV", 60, 2014),
+            new Car(3, "Nissan", 20000, "Hatchback", 45, 2010),
             new Car(4, "Ford", 30000, "Pickup", 70, 2021),
-            new Car(5, "Chevrolet", 35000, "Sports car", 80, 2022),
-            new Car(6, "Mazda", 22000, "Sedan", 50, 2017),
-            new Car(7, "Volkswagen", 27000, "Hatchback", 55, 2020),
+            new Car(5, "Chevrolet", 35000, "Sports car", 80, 2018),
+            new Car(6, "Mazda", 22000, "Sedan", 50, 2011),
+            new Car(7, "Volkswagen", 27000, "Hatchback", 55, 2013),
             new Car(8, "BMW", 45000, "Luxury car", 100, 2022),
             new Car(9, "Mercedes", 50000, "Luxury car", 110, 2023),
             new Car(10, "Audi", 42000, "Sedan", 90, 2021),
-            new Car(11, "Subaru", 24000, "SUV", 60, 2018),
+            new Car(11, "Subaru", 24000, "SUV", 60, 2009),
             new Car(12, "Lexus", 48000, "Luxury car", 105, 2022),
-            new Car(13, "Kia", 18000, "Sedan", 40, 2016),
-            new Car(14, "Hyundai", 20000, "SUV", 50, 2017),
+            new Car(13, "Kia", 18000, "Sedan", 40, 2005),
+            new Car(14, "Hyundai", 20000, "SUV", 50, 2008),
             new Car(15, "Porsche", 60000, "Sports car", 120, 2023),
-            new Car(16, "Jeep", 32000, "SUV", 75, 2020),
+            new Car(16, "Jeep", 32000, "SUV", 75, 2016),
             new Car(17, "Tesla", 70000, "Electric car", 130, 2022),
             new Car(18, "Ferrari", 150000, "Sports car", 200, 2023),
             new Car(19, "Lamborghini", 200000, "Sports car", 250, 2023),
@@ -109,5 +109,11 @@ class Program
         linqCommands.getCarsProfit(cars, vehicleFleets);
         
         linqCommands.getCarRent(cars, vehicleFleets);
+
+        linqCommands.getClient(clients);
+
+        linqCommands.getOldCars(cars);
+
+        Console.ReadKey();
     }
 }
