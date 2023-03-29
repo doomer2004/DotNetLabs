@@ -1,4 +1,4 @@
-namespace LINQlab;
+namespace LINQ.Models;
 
 public class Client
 {
@@ -13,6 +13,11 @@ public class Client
         FullName = fullName;
         Address = address;
         PhoneNumber = phoneNumber;
+    }
+
+    public override string ToString()
+    {
+        return $"Name : {FullName}, Address : {Address}, PhoneNumber : {PhoneNumber}";
     }
 }
 

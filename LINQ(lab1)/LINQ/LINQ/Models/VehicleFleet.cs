@@ -1,4 +1,4 @@
-namespace LINQlab;
+namespace LINQ.Models;
 
 public class VehicleFleet
 {
@@ -6,14 +6,14 @@ public class VehicleFleet
     
     public int CarId { get; set; }
     
-    public int RentalsCount { get; set; }
+    public int YearsInRental { get; set; }
 
     public decimal Deposit { get; set; }
 
-    public VehicleFleet(int id, int carId, int rentalsCount, decimal deposit)
+    public VehicleFleet(int id, int carId, int yearsInRental, decimal deposit)
     {
         Id = id;
-        RentalsCount = rentalsCount;
+        YearsInRental = yearsInRental;
         CarId = carId;
         Deposit = deposit;
     }

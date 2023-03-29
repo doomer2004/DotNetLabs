@@ -1,4 +1,4 @@
-namespace LINQlab;
+namespace LINQ.Models;
 
 public class Order
 {
@@ -12,20 +12,27 @@ public class Order
     
     public DateTime ReturnTime { get; set; }
     
-    public bool DepositStatus { get; set; }
+    public bool IsReturned { get; set; }
 
-    public Order(int id, int clinetId, int carFromVehicleFleetId, DateTime creationTime, DateTime returnTime, bool depositStatus)
+    public Order(int id, 
+        int clinetId, 
+        int carFromVehicleFleetId, 
+        DateTime creationTime, 
+        DateTime returnTime, 
+        bool isReturned)
     {
         Id = id;
         ClinetId = clinetId;
         CarFromVehicleFleetId = carFromVehicleFleetId;
         CreationTime = creationTime;
         ReturnTime = returnTime;
-        DepositStatus = depositStatus;
+        IsReturned = isReturned;
     }
     
     public override string ToString()
     {
-        return $"Order Id:{Id}-ClinetId:{ClinetId}-CarFromVehicleFleetId:{CarFromVehicleFleetId}-CreationTime:{CreationTime}-ReturnTime:{ReturnTime}-DepositStatus:{DepositStatus}";
+        return $"ClinetId:{ClinetId}-CarFromVehicleFleetId:" +
+               $"{CarFromVehicleFleetId}-CreationTime:{CreationTime}" +
+               $"-ReturnTime:{ReturnTime}-IsReturned:{IsReturned}";
     }
 }
