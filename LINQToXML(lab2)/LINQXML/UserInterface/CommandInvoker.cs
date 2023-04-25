@@ -18,7 +18,7 @@ public class CommandInvoker : ICommandInvoker
             {ExecutingCommandType.GetAllCars, GetAllCars},
             {ExecutingCommandType.GetCarsByType, GetCarsByType},
             {ExecutingCommandType.GetOrdersbyDate, GetOrdersbyDate},
-            {ExecutingCommandType.GetTopFiveOldCars, GetTopOldCars},
+            {ExecutingCommandType.GetOldCars, GetTopOldCars},
             {ExecutingCommandType.GetClientContacts, GetClientContacts},
             {ExecutingCommandType.GetFirstClients, GetFirstClients},
             {ExecutingCommandType.GetRentalPrice, GetRentalPrice},

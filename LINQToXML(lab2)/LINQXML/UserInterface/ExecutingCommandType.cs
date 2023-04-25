@@ -5,7 +5,7 @@ public enum ExecutingCommandType
     GetCarsByType = 1,
     GetAllCars,
     GetOrdersbyDate,
-    GetTopFiveOldCars,
+    GetOldCars,
     GetClientContacts,
     GetFirstClients,
     GetRentalPrice,
