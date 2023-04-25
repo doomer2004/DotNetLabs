@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\bin\Debug\net6.0\LINQXML.exe
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\bin\Debug\net6.0\LINQXML.deps.json
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\bin\Debug\net6.0\LINQXML.runtimeconfig.json
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\bin\Debug\net6.0\LINQXML.dll
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\bin\Debug\net6.0\LINQXML.pdb
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.AssemblyInfo.cs
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.dll
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\refint\LINQXML.dll
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.pdb
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\LINQXML.genruntimeconfig.cache
+C:\Users\HP\Desktop\DotNetLabs\LINQToXML(lab2)\LINQXML\obj\Debug\net6.0\ref\LINQXML.dll

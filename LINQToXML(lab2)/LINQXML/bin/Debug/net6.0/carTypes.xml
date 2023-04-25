@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCarType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CarType>
+    <Id>1</Id>
+    <Type>Sedan</Type>
+  </CarType>
+  <CarType>
+    <Id>2</Id>
+    <Type>SUV</Type>
+  </CarType>
+  <CarType>
+    <Id>3</Id>
+    <Type>Hatchback</Type>
+  </CarType>
+  <CarType>
+    <Id>4</Id>
+    <Type>Coupe</Type>
+  </CarType>
+  <CarType>
+    <Id>5</Id>
+    <Type>Convertible</Type>
+  </CarType>
+</ArrayOfCarType>
