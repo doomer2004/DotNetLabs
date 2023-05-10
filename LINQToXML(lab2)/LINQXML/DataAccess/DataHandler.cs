@@ -67,7 +67,8 @@ public class DataHandler : IDataHandler
         var res = from vehicleFleet in _document.Descendants("VehicleFleet")
             join car in _document.Descendants("Car") 
                 on vehicleFleet.Element("CarId").Value equals car.Element("Id").Value
-            select $"Car id {car.Element("Id").Value} - rental price {(decimal.Parse(car.Element("RentalPrice").Value) - ((decimal.Parse(vehicleFleet.Element("YearsInRental").Value) / 100m) * decimal.Parse(car.Element("RentalPrice").Value)))}";
+            select $"Car id {car.Element("Id").Value} - rental price " +
+                   $"{(decimal.Parse(car.Element("RentalPrice").Value) - ((decimal.Parse(vehicleFleet.Element("YearsInRental").Value) / 100m) * decimal.Parse(car.Element("RentalPrice").Value)))}";
         return res;
     }
     
