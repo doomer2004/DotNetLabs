@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\bin\Debug\net6.0\StructuralDesignPatterns.exe
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\bin\Debug\net6.0\StructuralDesignPatterns.deps.json
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\bin\Debug\net6.0\StructuralDesignPatterns.runtimeconfig.json
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\bin\Debug\net6.0\StructuralDesignPatterns.dll
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\bin\Debug\net6.0\StructuralDesignPatterns.pdb
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.AssemblyInfo.cs
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.dll
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\refint\StructuralDesignPatterns.dll
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.pdb
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\StructuralDesignPatterns.genruntimeconfig.cache
+C:\Users\HP\Desktop\DotNetLabs\StructuralDesignPatterns(lab4)\StructuralDesignPatterns\StructuralDesignPatterns\obj\Debug\net6.0\ref\StructuralDesignPatterns.dll
