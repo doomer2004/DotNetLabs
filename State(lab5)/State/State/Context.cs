@@ -15,4 +15,13 @@ public class Context
         _currentState = grantState;
     }
 
+    public void Request1()
+    {
+        _currentState.NextState();
+    }
+
+    public void Request2()
+    {
+        _currentState.PastState();
+    }
 }
