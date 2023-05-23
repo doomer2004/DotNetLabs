@@ -2,7 +2,7 @@ namespace State;
 
 public class Context
 {
-    private GrantState _currentState = null;
+    private GrantState _currentState;
 
     public Context(GrantState grantState)
     {
@@ -13,6 +13,7 @@ public class Context
     {
         Console.WriteLine($"Context: Transition to {grantState.GetType().Name}.");
         _currentState = grantState;
+        _currentState.SetContext(this);
     }
 
     public void Request1()
