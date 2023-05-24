@@ -3,10 +3,12 @@ namespace State;
 public class Context
 {
     private GrantState _currentState;
+    public string _grantOvner;
 
-    public Context(GrantState grantState)
+    public Context(GrantState grantState, string grantOvner)
     {
         TransitionTo(grantState);
+        _grantOvner = grantOvner;
     }
 
     public void TransitionTo(GrantState grantState)
